@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// import "./App.css";
+import { useState } from "react";
+import reviews from "./data";
+import Reviews from "./components/Reviews";
 
 function App() {
+  const [allReviews, setReviews] = useState(reviews);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <h2>Our Reviews</h2>
+      <div className="line"></div>
+      <Reviews reviews={allReviews} />
+    </main>
   );
 }
 

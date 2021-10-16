@@ -1,0 +1,100 @@
+$oswald-font: "Oswald", sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(235, 241, 241);
+}
+main {
+  width: 90%;
+  margin: 10px auto;
+  margin-top: 80px;
+  h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-family: $oswald-font;
+    font-weight: 600;
+  }
+  .line {
+    width: 70px;
+    height: 3px;
+    background-color: green;
+    margin: 0 auto;
+  }
+  section {
+    width: 90%;
+    margin: 90px auto;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 3px 3px 20px #aaa;
+    text-align: center;
+    padding: 10px 30px;
+    font-family: $oswald-font;
+    // font-weight: 600;
+
+    article {
+      img {
+        width: 25%;
+        height: 15vh;
+        display: block;
+        margin: 10px auto;
+        border-radius: 50%;
+      }
+      h4 {
+        margin-top: 15px;
+        margin-bottom: 3px;
+        font-weight: 600;
+      }
+      .job {
+        margin-top: 5px;
+        text-transform: uppercase;
+        color: green;
+      }
+      .text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+      .icon-group {
+        i {
+          margin: 5px 20px;
+          color: green;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 80%;
+    margin: 10px auto;
+    margin-top: 80px;
+
+    article {
+      img {
+        width: 25%;
+        height: 25vh;
+        display: block;
+        margin: 10px auto;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: 810px) {
+  main {
+    width: 50%;
+    // background-color: red;
+  }
+}
+
+@media (min-width: 1286px) {
+  main {
+    width: 40%;
+    // background-color: red;
+  }
+}
